@@ -1,0 +1,172 @@
+{
+  "statusCode": 200,
+  "courses": [
+    {
+      "id": "2",
+      "title": "Advanced React",
+      "description": "Dive deeper into React with hooks, context API, and performance optimization.",
+      "duration": "6 weeks",
+      "instructorName": "me",
+      "level": "beginer",
+      "category": "Backend"
+    },
+    {
+      "id": "3",
+      "title": "Python for Beginners",
+      "description": "Get started with Python programming, covering syntax, loops, and functions.",
+      "instructorName": "Emily Johnson",
+      "duration": "5 weeks",
+      "level": "Beginner",
+      "category": "Programming"
+    },
+    {
+      "id": "4",
+      "title": "Full-Stack Development",
+      "description": "Learn how to build and deploy full-stack web applications.",
+      "instructorName": "Michael Brown",
+      "duration": "8 weeks",
+      "level": "Advanced",
+      "category": "Web Development"
+    },
+    {
+      "id": "5",
+      "title": "Data Science Fundamentals",
+      "description": "An introduction to data science concepts, tools, and techniques.",
+      "instructorName": "Sarah Williams",
+      "duration": "10 weeks",
+      "level": "Intermediate",
+      "category": "Data Science"
+    },
+    {
+      "id": "6",
+      "title": "Machine Learning Essentials",
+      "description": "Understand key machine learning algorithms and applications.",
+      "instructorName": "David Wilson",
+      "duration": "7 weeks",
+      "level": "Advanced",
+      "category": "Artificial Intelligence"
+    },
+    {
+      "id": "7",
+      "title": "Cybersecurity Basics",
+      "description": "Learn the fundamentals of cybersecurity and how to protect systems from threats.",
+      "instructorName": "Laura Martinez",
+      "duration": "6 weeks",
+      "level": "Beginner",
+      "category": "Cybersecurity"
+    },
+    {
+      "id": "8",
+      "title": "UI/UX Design Principles",
+      "description": "Explore user experience design principles and best practices.",
+      "instructorName": "James Anderson",
+      "duration": "5 weeks",
+      "level": "Beginner",
+      "category": "Design"
+    },
+    {
+      "id": "9",
+      "title": "Mobile App Development",
+      "description": "Build mobile applications for iOS and Android using modern frameworks.",
+      "instructorName": "Emma Thomas",
+      "duration": "9 weeks",
+      "level": "Intermediate",
+      "category": "Mobile Development"
+    },
+    {
+      "id": "10",
+      "title": "Cloud Computing with AWS",
+      "description": "Gain knowledge on AWS services and cloud computing fundamentals.",
+      "instructorName": "Robert White",
+      "duration": "8 weeks",
+      "level": "Intermediate",
+      "category": "Cloud Computing"
+    }
+  ],
+  "instructors": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "experience": "5 years",
+      "specialization": "React, Front-End Development"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "experience": "7 years",
+      "specialization": "Angular, TypeScript"
+    },
+    {
+      "id": "3",
+      "name": "Michael Johnson",
+      "experience": "6 years",
+      "specialization": "JavaScript, Functional Programming"
+    },
+    {
+      "id": "4",
+      "name": "Emily Brown",
+      "experience": "4 years",
+      "specialization": "Python, Data Science"
+    },
+    {
+      "id": "5",
+      "name": "Robert Wilson",
+      "experience": "8 years",
+      "specialization": "Algorithms, Data Structures"
+    },
+    {
+      "id": "6",
+      "name": "Sarah Lee",
+      "experience": "10 years",
+      "specialization": "Full-Stack Development, Node.js"
+    },
+    {
+      "id": "7",
+      "name": "Daniel Martinez",
+      "experience": "6 years",
+      "specialization": "Machine Learning, AI"
+    },
+    {
+      "id": "8",
+      "name": "Sophia Anderson",
+      "experience": "5 years",
+      "specialization": "Cybersecurity, Ethical Hacking"
+    },
+    {
+      "id": "9",
+      "name": "William Thomas",
+      "experience": "7 years",
+      "specialization": "AWS, Cloud Computing"
+    },
+    {
+      "id": "10",
+      "name": "Olivia Taylor",
+      "experience": "4 years",
+      "specialization": "UI/UX, Product Design"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Web Development"
+    },
+    {
+      "id": 2,
+      "name": "Frontend"
+    },
+    {
+      "id": 3,
+      "name": "Programming"
+    },
+    {
+      "id": 4,
+      "name": "Backend"
+    },
+    {
+      "id": 5,
+      "name": "Data Science"
+    }
+  ],
+  "message": "Videos fetched successfully",
+  "success": true
+}
