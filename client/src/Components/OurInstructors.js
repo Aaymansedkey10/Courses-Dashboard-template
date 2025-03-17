@@ -1,15 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import SingleInstructor from "../Pages/SingleInstructor";
 import { getAllInstructors } from "../RTK/slices/InstructorsSlice";
+import Spinner from "../Pages/Spinner";
 
 export default function OurInstructors(){
-    const [ourInstructors , setOurInstructors] = useState([]);
     const instructors = useSelector((state) => state.instructors);
     const dispatch = useDispatch();
     useEffect(()=>{ 
-        // setOurInstructors(getAllInstructors());
         dispatch(getAllInstructors());
     },[])
     return(
@@ -26,7 +25,9 @@ export default function OurInstructors(){
                                     <SingleInstructor instructor={instructor}/>
                                 </div>
                             ))
-                        ):(<h2>loading...</h2>)
+                        ):(<>
+                            <Spinner />
+                        </>)
                     }
                 </div>
             </Container>

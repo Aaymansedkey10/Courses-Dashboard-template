@@ -1,10 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Container, Table } from "react-bootstrap";
-import { Link } from "react-router";
-
-import { deleteCourse, getAllCourses } from "../RTK/slices/CoursesSlice";
-import Swal from "sweetalert2";
+import { Container } from "react-bootstrap";
+import { getAllCourses } from "../RTK/slices/CoursesSlice";
 import CourseTable from "../Pages/CourseTable";
 export default function OurCourses() {
     const courses = useSelector((state) => state.courses);
@@ -40,8 +37,6 @@ export default function OurCourses() {
                         <h1 className="text-capitalize">Our Courses</h1>
                         <div className="d-flex my-2 align-items-center gap-2">
                             <input className="form-control" type="search" placeholder="Search" aria-label="Search" onChange={(e) => handelSearch(e)} />
-                            {/* <button className="btn custom-button" type="submit" onClick={(e) => search(e)}>Search</button> */}
-
                         </div>
                             {
                             coursesFiltered.length > 0 ? (

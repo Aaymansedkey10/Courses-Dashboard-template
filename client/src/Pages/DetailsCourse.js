@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Card, Container } from "react-bootstrap";
 import { Link, useParams } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,8 +8,6 @@ export default function DetailsCourse() {
     const { id } = useParams();    
     const course = useSelector((state) => state.courses);
     const dispatch = useDispatch();
-    // console.log(course);
-
     useEffect(() => {
         dispatch(getSingleCourse(id));
     }, [id])
