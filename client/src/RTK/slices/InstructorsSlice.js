@@ -11,10 +11,6 @@ export const CoursesSlice = createSlice({
     name: "coursesSlice",
     initialState: [],
     reducers: {
-        getSingleInstructor: (state, action) => {
-            console.log(action.payload);
-            // return state.find((instructor) => instructor.id === action.payload);
-        }
     },
     extraReducers: (builder) => {
         builder.addCase(getAllInstructors.fulfilled, (state, action) => {
@@ -23,5 +19,4 @@ export const CoursesSlice = createSlice({
     }
 })
 
-export const { getSingleInstructor } = CoursesSlice.actions
 export default CoursesSlice.reducer

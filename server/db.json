@@ -2,15 +2,6 @@
   "statusCode": 200,
   "courses": [
     {
-      "id": "2",
-      "title": "Advanced React",
-      "description": "Dive deeper into React with hooks, context API, and performance optimization.",
-      "duration": "6 weeks",
-      "instructorName": "me",
-      "level": "beginer",
-      "category": "Backend"
-    },
-    {
       "id": "3",
       "title": "Python for Beginners",
       "description": "Get started with Python programming, covering syntax, loops, and functions.",
@@ -54,15 +45,6 @@
       "duration": "6 weeks",
       "level": "Beginner",
       "category": "Cybersecurity"
-    },
-    {
-      "id": "8",
-      "title": "UI/UX Design Principles",
-      "description": "Explore user experience design principles and best practices.",
-      "instructorName": "James Anderson",
-      "duration": "5 weeks",
-      "level": "Beginner",
-      "category": "Design"
     },
     {
       "id": "9",
@@ -147,23 +129,23 @@
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Web Development"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Frontend"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Programming"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Backend"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Data Science"
     }
   ],

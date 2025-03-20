@@ -19,9 +19,7 @@ export const getSingleCourse = createAsyncThunk(
 export const addNewCourse = createAsyncThunk(
     "coursesSlice/addNewCourse",
     async (course) => {
-        // إزالة id قبل الإرسال لضمان أن API ينشئه تلقائيًا
         const { id, ...courseData } = course;
-
         const response = await fetch(`${Url}`, {
             method: "POST",
             headers: {
@@ -32,7 +30,6 @@ export const addNewCourse = createAsyncThunk(
 
         const data = await response.json();
         console.log("Response from API:", data);
-        
         return data;
     }
 );
@@ -51,16 +48,6 @@ export const updateCourse = createAsyncThunk(
         return data;
     }
 );
-
-// export const deleteCourse = createAsyncThunk(
-//     "coursesSlice/deleteCourse",
-//     async (id) => {
-//         const response = await fetch(`${Url}/${id}`, {
-//             method: "DELETE",
-//         });
-//         return id;
-//     }
-// );
 
 export const deleteCourse = createAsyncThunk("coursesSlice/deleteCourse", async (id, { rejectWithValue }) => {
     const response = await fetch(`${Url}/${id}`, { method: "DELETE" });
